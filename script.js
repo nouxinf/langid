@@ -17,10 +17,12 @@ async function getData() {
 getData();
 
 const inputField = document.getElementById("mainfield");
+const resultsTable = document.getElementById("resultstable").firstElementChild;
 
 const defaultChars = ` .,;:1234567890#{}()[]-=+!?"'/<>@~|*&^%$£`;
 
-inputField.addEventListener("change", () => {
+inputField.addEventListener("input", () => {
+  if (!langData) return;
   const typed = inputField.value.toLowerCase();
 
   const remainingLangs = Object.entries(langData)
@@ -33,4 +35,15 @@ inputField.addEventListener("change", () => {
     .map(([code]) => code);
 
   console.log(remainingLangs);
+  resultsTable.innerHTML = "";
+  for (let i = 0; i < remainingLangs.length; i++) {
+    let newRow = document.createElement("tr");
+    let flagCell = document.createElement("th");
+    let nameCell = document.createElement("th");
+    flagCell.textContent = "FLAG_PLACEHOLDER";
+    nameCell.textContent = langData[remainingLangs[i]].name;
+    newRow.appendChild(flagCell);
+    newRow.appendChild(nameCell);
+    resultsTable.appendChild(newRow);
+  }
 });
