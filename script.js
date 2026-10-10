@@ -40,7 +40,8 @@ inputField.addEventListener("input", () => {
     let newRow = document.createElement("tr");
     let flagCell = document.createElement("th");
     let nameCell = document.createElement("th");
-    flagCell.textContent = "FLAG_PLACEHOLDER";
+    flagCell.innerHTML = `<img src="flags/${remainingLangs[i]}.svg"/>`;
+    flagCell.classList = "flag";
     nameCell.textContent = langData[remainingLangs[i]].name;
     newRow.appendChild(flagCell);
     newRow.appendChild(nameCell);
