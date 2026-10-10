@@ -1,0 +1,10 @@
+{
+  "en": {
+    "alphabet": "abcdefghijklmnopqrstuvwxyz",
+    "name": "English"
+  },
+  "pl": {
+    "alphabet": "aąbcćeędfghijklłmnoóprsśtuwxyzżź",
+    "name": "Polish"
+  }
+}
