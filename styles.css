@@ -28,3 +28,8 @@ main {
     width: 95%;
   }
 }
+
+input[type="text"] {
+  width: 50%;
+  padding: 10px;
+}
