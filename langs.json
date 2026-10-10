@@ -6,5 +6,9 @@
   "pl": {
     "alphabet": "aąbcćeędfghijklłmnoóprsśtuwyzżź",
     "name": "Polish"
+  },
+  "fr": {
+    "alphabet": "abcdefghijklmnopqrstuvwxyzàâæçéèêëîïôœùûüÿ",
+    "name": "French"
   }
 }
