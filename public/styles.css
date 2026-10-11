@@ -44,6 +44,37 @@ input[type="text"] {
 	margin-right: auto;
 	border: 2px solid grey;
 	border-radius: 5px;
-	padding: 10px;
+	padding: 0px;
 	margin-top: 5px;
+
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+#resultstable tr:first-child th:first-child,
+#resultstable tr:first-child td:first-child {
+	border-top-left-radius: 5px;
+}
+
+#resultstable tr:first-child th:last-child,
+#resultstable tr:first-child td:last-child {
+	border-top-right-radius: 5px;
+}
+
+#resultstable tr:last-child td:first-child {
+	border-bottom-left-radius: 5px;
+}
+#resultstable tr:last-child td:last-child {
+	border-bottom-right-radius: 5px;
+}
+
+#resultstable td,
+#resultstable th {
+	border-bottom: 2px solid grey;
+	padding: 8px 10px;
+}
+
+#resultstable tr:last-child td,
+#resultstable tr:last-child th {
+	border-bottom: none;
 }
