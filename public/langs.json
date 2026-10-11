@@ -1,0 +1,22 @@
+{
+	"en": {
+		"alphabet": "abcdefghijklmnopqrstuvwxyz",
+		"name": "English"
+	},
+	"pl": {
+		"alphabet": "aąbcćeędfghijklłmnoóprsśtuwyzżź",
+		"name": "Polish/Polski"
+	},
+	"fr": {
+		"alphabet": "abcdefghijklmnopqrstuvwxyzàâæçéèêëîïôœùûüÿ",
+		"name": "French/Français"
+	},
+	"es": {
+		"alphabet": "abcdefghijklmnopqrstuvwxyzñáéíóúü",
+		"name": "Spanish/Español"
+	},
+	"ie": {
+		"alphabet": "abcdefghilmnoprstuáéíóú",
+		"name": "Irish/Gaeilge"
+	}
+}
